@@ -99,6 +99,8 @@ public class JiebaAnalyzerTest {
             }
             tokenStream.reset();
         }
+        
+        analyzer.close();
     }
 
     @Test
@@ -122,6 +124,8 @@ public class JiebaAnalyzerTest {
             }
             tokenStream.reset();
         }
+        
+        analyzer.close();
     }
 
     @Test
@@ -146,6 +150,8 @@ public class JiebaAnalyzerTest {
             }
             tokenStream.reset();
         }
+        
+        analyzer.close();
 
     }
 }

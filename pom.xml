@@ -24,7 +24,7 @@
 	</parent>
 
 	<properties>
-		<elasticsearch.version>1.0.0.RC2</elasticsearch.version>
+		<elasticsearch.version>1.4.0.Beta1</elasticsearch.version>
 	</properties>
 
 	<repositories>
@@ -52,7 +52,7 @@
         <dependency>
             <groupId>com.huaban</groupId>
             <artifactId>jieba-analysis</artifactId>
-            <version>0.0.2</version>
+            <version>1.0.1</version>
         </dependency>
 
 		<dependency>
@@ -116,4 +116,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+  <distributionManagement>
+     <repository>
+     <id>everhomes.repo</id>
+     <name>Everhomes Internal Repository</name>
+     <url>http://mvn-mirror.lab.everhomes.com:8081/artifactory/libs-release-local</url>
+         </repository>
+     <snapshotRepository>
+         <id>everhomes.snapshot.repo</id>
+         <name>Everhomes Internal Snapshot Repository</name>
+         <url>http://mvn-mirror.lab.everhomes.com:8081/artifactory/libs-snapshot-local</url>
+     </snapshotRepository>
+   </distributionManagement>
 </project>

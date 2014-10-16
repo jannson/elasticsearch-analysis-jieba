@@ -70,7 +70,7 @@ public final class JiebaTokenFilter extends TokenFilter {
 
         SegToken token = tokenIter.next();
         offsetAtt.setOffset(token.startOffset, token.endOffset);
-        termAtt.copyBuffer(token.token.toCharArray(), 0, token.token.length());
+        termAtt.copyBuffer(token.toString().toCharArray(), 0, token.toString().length());
         typeAtt.setType("word");
         return true;
     }
